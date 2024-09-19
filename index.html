@@ -28,7 +28,8 @@
             var urlParams = new URLSearchParams(window.location.search);
             var videoSrc = urlParams.get('src');
             if (videoSrc) {
-                document.getElementById('videoPlayer').src = decodeURIComponent(videoSrc);
+                var videoSrc = 'https://storage.googleapis.com/creatorspace-public' + videoId + '.mp4';
+                document.getElementById('videoPlayer').src = videoSrc;
             }
         });
     </script>
